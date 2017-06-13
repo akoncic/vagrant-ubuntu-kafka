@@ -30,7 +30,7 @@ Default configuration assumes maximum number of 3 instances. If you want to crea
 
 Scripts
 =======
-Some Kafka scripts have been included for convenience. Details are as follows:
+Some Kafka scripts have been included for convenience. Details are as follow:
 
 | Script | Description |
 | --- | --- |
