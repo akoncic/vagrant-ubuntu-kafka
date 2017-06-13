@@ -1,6 +1,6 @@
 About
 =====
-This repository contains a template [Vagrantfile][vagrantfile] for creating a new [Kafka][kafka] cluster. As a result, you will have 64-bit [Ubuntu][ubuntu] 16.04 (Xenial Xerus) virtual machines running your own Kafka cluster.
+This repository contains a template [Vagrantfile][vagrantfile] for creating new [Kafka][kafka] cluster. As a result, you will have 64-bit [Ubuntu][ubuntu] 16.04 (Xenial Xerus) virtual machines running your own Kafka cluster.
 
 This Kafka cluster **does not** come bundled with [ZooKeeper][zookeeper] and is meant to run alongside ZooKeeper cluster available in this [repository][vagrant-ubuntu-zk]. If you need more streamlined ZooKeeper/Kafka Vagrant setup, check out this [repository][vagrant-ubuntu-zk-kafka].
 
@@ -13,7 +13,7 @@ Default Setup
 By default, **3** Kafka brokers will be created. Broker details are as follow:
 
 | Name | IP  | RAM (MB) | CPUs | CPU Cap (%) |
-| --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | kafka-01 | 10.10.10.21 | 1536 | 1 | 50 |
 | kafka-02 | 10.10.10.22 | 1536 | 1 | 50 |
 | kafka-03 | 10.10.10.23 | 1536 | 1 | 50 |
