@@ -2,15 +2,18 @@ About
 =====
 This repository contains a template [Vagrantfile][vagrantfile] for creating new [Kafka][kafka] cluster. As a result, you will have 64-bit [Ubuntu][ubuntu] 16.04 (Xenial Xerus) virtual machines running your own Kafka cluster.
 
-This Kafka cluster **does not** come bundled with [ZooKeeper][zookeeper] and is meant to run alongside ZooKeeper cluster available in this [repository][vagrant-ubuntu-zk]. If you need more streamlined ZooKeeper/Kafka Vagrant setup, check out this [repository][vagrant-ubuntu-zk-kafka].
+This Kafka cluster does not come bundled with [ZooKeeper][zookeeper] and is meant to run alongside ZooKeeper cluster available in this [repository][vagrant-ubuntu-zk]. If you need more streamlined ZooKeeper/Kafka Vagrant setup, check out this [repository][vagrant-ubuntu-zk-kafka].
 
 Getting Started
 ===============
-Install [VirtualBox][virtualbox] (> 5.1.22), [Vagrant][vagrant] (> 1.9.5), clone this repository and execute `vagrant up`.
+- Install [VirtualBox][virtualbox] (> 5.1.22);
+- install [Vagrant][vagrant] (> 1.9.5);
+- clone this repository;
+- execute `vagrant up`.
 
 Default Setup
 =============
-By default, **3** Kafka brokers will be created. Broker details are as follow:
+By default, 3 Kafka brokers will be created. Broker details are as follow:
 
 | Name | IP  | RAM (MB) | CPUs | CPU Cap (%) |
 | :---: | :---: | :---: | :---: | :---: |
@@ -24,7 +27,7 @@ Custom Setup
 ============
 In case you are not using ZooKeeper available [here][vagrant-ubuntu-zk], you will need to update ZooKeeper connection string for each created instance. See `zookeeper.connect` directive in `server.properties` configuration file for more information.
 
-You can override default configuration with your own `config.rb` file. See `config.rb.sample` form more information.
+You can override default configuration with your own `config.rb` file. See `config.rb.sample` for more information.
 
 Default configuration assumes maximum number of 3 instances. If you want to create more instances, you will need to manually create `server.properties` configuration file for each new instance.
 
