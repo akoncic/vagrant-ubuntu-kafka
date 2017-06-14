@@ -6,7 +6,8 @@ This Kafka cluster does not come bundled with [ZooKeeper][zookeeper] and is mean
 
 Getting Started
 ===============
-- Install [VirtualBox][virtualbox] (> 5.1.22);
+To quickly get started:
+- install [VirtualBox][virtualbox] (> 5.1.22);
 - install [Vagrant][vagrant] (> 1.9.5);
 - clone this repository;
 - execute `vagrant up`.
