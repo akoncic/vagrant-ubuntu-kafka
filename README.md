@@ -26,7 +26,7 @@ In this scenario, Kafka brokers expect ZooKeeper to be at `10.10.10.11`, `10.10.
 
 Custom Setup
 ============
-In case you are not using ZooKeeper available [here][vagrant-ubuntu-zk], you will need to update ZooKeeper connection string for each created instance. See `zookeeper.connect` directive in Kafka's `server.properties` configuration file for more information.
+In case you are not using ZooKeeper available [here][vagrant-ubuntu-zk], you will need to update ZooKeeper connection string for each created instance. Check `expand_zk_ip_range` function in the [`kafka.sh`][provision-script] provision script for more details. Otherwise, manually update the `zookeeper.connect` directive in Kafka's `server.properties` configuration file.
 
 You can override default configuration with your own `config.rb` file. See `config.rb.sample` for more information.
 
@@ -52,3 +52,4 @@ Some Kafka scripts have been included for convenience. Details are as follow:
 [vagrant-ubuntu-zk-kafka]: https://github.com/akoncic/vagrant-ubuntu-zk-kafka
 [virtualbox]: https://www.virtualbox.org/
 [vagrant]: https://www.vagrantup.com/
+[provision-script]: https://github.com/akoncic/vagrant-ubuntu-kafka/blob/master/provision/kafka.sh
