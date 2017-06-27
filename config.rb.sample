@@ -3,7 +3,7 @@ $instances = 3
 
 # Base name of the VM
 # Example: "kafka-01", "kafka-02", "kafka-${instances}"
-$instance_name_prefix="kafka"
+$instance_name_prefix = "kafka"
 
 # VM
 $vm_memory = 1536

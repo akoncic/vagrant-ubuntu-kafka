@@ -7,7 +7,7 @@ CONFIG = File.join(File.dirname(__FILE__), "config.rb")
 
 # config.rb defaults
 $instances = 3
-$instance_name_prefix="kafka"
+$instance_name_prefix = "kafka"
 $vm_memory = 1536
 $vm_cpus = 1
 $vm_cpuexecutioncap = 50
@@ -35,7 +35,7 @@ Vagrant.configure("2") do |config|
         config.vm.network "forwarded_port", guest: guest, host: host, auto_correct: true
       end
 
-      config.vm.provision "shell", path: "sh/kafka.sh", args:"#{i}"
+      config.vm.provision "shell", path: "provision/kafka.sh", :args => ["#{i}", "#{$instances}"]
 
       config.vm.provider "virtualbox" do |vm|
         vm.memory = $vm_memory

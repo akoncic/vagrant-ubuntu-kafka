@@ -22,15 +22,13 @@ By default, 3 Kafka brokers will be created. Broker details are as follow:
 | kafka-02 | 10.10.10.22 | 1536 | 1 | 50 |
 | kafka-03 | 10.10.10.23 | 1536 | 1 | 50 |
 
-Kafka brokers expect ZooKeeper to be at `10.10.10.11`, `10.10.10.12` and/or `10.10.10.13`.
+In this scenario, Kafka brokers expect ZooKeeper to be at `10.10.10.11`, `10.10.10.12` and/or `10.10.10.13`.
 
 Custom Setup
 ============
-In case you are not using ZooKeeper available [here][vagrant-ubuntu-zk], you will need to update ZooKeeper connection string for each created instance. See `zookeeper.connect` directive in `server.properties` configuration file for more information.
+In case you are not using ZooKeeper available [here][vagrant-ubuntu-zk], you will need to update ZooKeeper connection string for each created instance. See `zookeeper.connect` directive in Kafka's `server.properties` configuration file for more information.
 
 You can override default configuration with your own `config.rb` file. See `config.rb.sample` for more information.
-
-Default configuration assumes maximum number of 3 instances. If you want to create more instances, you will need to manually create `server.properties` configuration file for each new instance.
 
 Scripts
 =======
